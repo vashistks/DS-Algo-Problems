@@ -10,6 +10,7 @@ Output: (1,2)
 Explanation: 
 Initially, we have the team 1 and the team 2, placed like: 1,2.
 Then we pair the team (1,2) together with '(', ')' and ',', which is the final answer.
+
 Example 2:
 Input: 4
 Output: ((1,4),(2,3))
@@ -18,6 +19,7 @@ In the first round, we pair the team 1 and 4, the team 2 and 3 together, as we n
 And we got (1,4),(2,3).
 In the second round, the winners of (1,4) and (2,3) need to play again to generate the final winner, so you need to add the paratheses outside them.
 And we got the final answer ((1,4),(2,3)).
+
 Example 3:
 Input: 8
 Output: (((1,8),(4,5)),((2,7),(3,6)))
@@ -26,6 +28,7 @@ First round: (1,8),(2,7),(3,6),(4,5)
 Second round: ((1,8),(4,5)),((2,7),(3,6))
 Third round: (((1,8),(4,5)),((2,7),(3,6)))
 Since the third round will generate the final winner, you need to output the answer (((1,8),(4,5)),((2,7),(3,6))).
+
 Note:
 The n is in range [2, 212].
 We ensure that the input n can be converted into the form 2k, where k is a positive integer.
